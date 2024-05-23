@@ -4,9 +4,7 @@ import { resetRouter } from '@/router'
 
 const getDefaultState = () => {
   return {
-    token: getToken(),
-    name: '',
-    avatar: ''
+    token: getToken()
   }
 }
 
@@ -38,6 +36,7 @@ const actions = {
         setToken(data.token)
         resolve()
       }).catch(error => {
+        console.log(error)
         reject(error)
       })
     })
@@ -53,10 +52,10 @@ const actions = {
           return reject('Verification failed, please Login again.')
         }
 
-        const { name, avatar } = data
+        const { role, name } = data
 
         commit('SET_NAME', name)
-        commit('SET_AVATAR', avatar)
+      
         resolve(data)
       }).catch(error => {
         reject(error)
