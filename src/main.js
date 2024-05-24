@@ -12,6 +12,10 @@ import App from './App'
 import store from './store'
 import router from './router'
 
+import 'vue-area-linkage/dist/index.css'
+import VueAreaLinkage from 'vue-area-linkage'
+Vue.use(VueAreaLinkage)
+
 import '@/icons' // icon
 import '@/permission' // permission control
 

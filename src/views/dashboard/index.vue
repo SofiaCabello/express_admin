@@ -35,9 +35,9 @@ export default {
   },
   data() {
     return {
-      type: '省份',
+      type: '城市',
       param: {
-        level: 'province'
+        level: 'city'
       },
       myChart: null
     }
