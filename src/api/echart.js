@@ -21,3 +21,24 @@ export function getLogistic(param){
     params: param
   })
 }
+
+export function getTotalPackageCount(){
+  return request({
+    url: '/package/getTotalPackageCount',
+    method: 'get',
+  })
+}
+
+export function getPackageOrigin(){
+  return request({
+    url:'/package/getCountsByDeparture',
+    method:'get',
+  })
+}
+
+export function getPackageDestination(){
+  return request({
+    url:'/package/getCountsByDestination',
+    method:'get',
+  })
+}

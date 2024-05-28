@@ -67,6 +67,23 @@ export const constantRoutes = [
     ]
   },
 
+  /**
+   * 为什么不做客户管理呢？
+   * 根据法律法规，客户信息不得随意展示，即便是面向系统管理员，也不得随意查看客户信息。
+   */
+  // {
+  //   path: '/customer',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       name: '客户管理',
+  //       component: () => import('@/views/customer/index'),
+  //       meta: { title: '客户管理', icon: 'table' }
+  //     }
+  //   ]
+  // },
+
   {
     path: '/form',
     component: Layout,
